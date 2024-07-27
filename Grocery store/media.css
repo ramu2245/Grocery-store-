@@ -1,0 +1,120 @@
+@media(max-width: 1200px){
+    html{
+        font-size:55%;
+    }
+}
+
+/* --------------------------------media for max-width 991px------------------------------- */
+@media(max-width:991px){
+    .header-1, .header-2{
+        padding:2rem;
+    }
+    .header-2 #menu-bar{
+        display:initial;
+    }
+    .header-2 .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background: #fff;
+        padding:1rem 2rem;
+        display:none;
+    }
+
+    .header-2 .navbar.active{
+        display:initial;
+    }
+    .header-2 .navbar a{
+        font-size: 1.7rem;
+        display:block;
+        padding:1rem;
+        margin:1.5rem 0;
+        border:.1rem solid #fafafa;
+        border-left:.5rem solid var(--green);
+    }
+    section{
+        padding:2rem;
+    }
+    .box-container{
+        grid-template-columns: .7fr 2fr;
+    }
+    .box-container .left-col .box a{
+        justify-content: space-between;
+    }
+
+    .blog .box-container{
+        grid-template-columns: 2.5fr .8fr;
+        gap:1.5rem;
+    }
+
+   
+}
+/* --------------------------------media for max-width 991px  ends------------------------------- */
+
+/* --------------------------------media for max-width 768px------------------------------- */
+@media(max-width:768px){
+    .header-1 .search-box-container {
+        width:30rem;
+    }
+    .box-container {
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+    .box-container .right-col{
+        margin-top:2rem;
+    }
+    .about .box-container .right-col .box,
+    .about .box-container .right-col .heading-2
+     {
+        text-align:center;
+    }
+
+    .box-container{
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    .blog .box-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact .box-container .left{
+        flex-basis: 100%;
+        padding-bottom: 3rem;
+    }
+    
+    .contact .box-container .right{
+        flex-basis: 100%;
+    }
+
+}
+
+/* --------------------------------media for max-width 450px------------------------------- */
+@media(max-width:450px){
+    html{
+        font-size:50%;
+
+    }
+    .header-1{
+        flex-flow:column;
+    }
+    .header-1 .search-box-container {
+        width:100%;
+        margin-top:2rem;
+    }
+    .footer .box-container .box .icons a{
+        font-size:1.5rem;
+
+    }
+    .credit, .credit span{
+        font-size:1.5rem;
+    }
+    .services .box-container .box {
+        text-align: center;
+    }
+
+    .contact form .inputBox input{
+        width: 100%;
+    }
+}

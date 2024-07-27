@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Grocery Store</title>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+
+.container {
+    display:flex;
+    width:70%;
+    margin-bottom:30px;
+}
+#root{
+    width:60%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+.sidebar{
+    width:40%;
+    border-radius:5px;
+    background-color: #eee;
+    margin-left:20px;
+    padding:15px;
+    text-align:center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius:3px;
+    height:40px;
+    padding:10px;
+    margin-bottom: 20px;
+    color:white;
+    display: flex;
+    align-items: center;
+
+}
+.foot{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0px;
+    padding:10px 0px;
+    border-top:1px solid #333;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+
+
+
+   </style> 
+</head>
+<body>
+<!-- header section starts  -->
+    <header class="header">
+    <div class="header-1">
+        <a href="Home" class="logo" ><img src="images/logo-1.webp" alt=""></a>
+
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <div class="header-2">
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar shop-nav">
+            <a href="index.html" >Home</a>
+            <a href="about.html" >About us</a>
+            
+            <a href="shop.html" >Shop</a>
+            <a href="blog.html" >Blogs</a>
+            <a href="#" >FAQ</a>
+            <a href="contact.html" >Contact us</a>
+            <a   class="active" ><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Your location</a>
+            <a href="Login.html"> <i class="fa fa-lock"></i>Log in</a>
+            <a href="signup.html"> <i class="fas fa-user-circle"></i>Sign up</a>
+        </div>
+    </div>
+</header>
+<!-- header section ends  -->
+
+  <div class="container">
+    <div id="root"></div>
+    <div class="sidebar ">
+                    <div class="head" ><p>My Cart</p></div>
+                   <div id="cartItem" >your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">&#8377;0</h2>
+        </div>
+        
+             </div>
+  
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts -->
+<section class="footer">
+    <div class="wrapper">
+        <div class="feature-box">
+            <i class="fas fa-truck"></i>
+            <div class="content">
+                <h3>Free & Next Day Delivery</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-shopping-basket"></i>
+            <div class="content">
+                <h3>100% satifaction guarantee</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div class="feature-box">
+            <i class="fas fa-tag"></i>
+            <div class="content">
+                <h3>great daily deals discount</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/logo-footer-1.webp" alt="">
+            <div class="icons icons-1">
+                <a href="#"><i class="fas fa-phone-alt"></i>+91 9951247825</a>
+                <a href="#"><i class="fa fa-mobile"></i>+91 6305406706</a>
+                <a href="#"><i class="fas fa-envelope"></i>silentboypa1@gmail.com</a>
+                <a href="#"><i class="fas fa-globe"></i>www.grocery.com</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Categories</h2>
+            <div class="icons">
+                <a href="#">vegetables</a>
+                <a href="#">grocery & staples</a>
+                <a href="#">breakfast & dairy</a>
+                <a href="#">soft drinks</a>
+                <a href="#">Biscuits & cookies</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>About us</h2>
+            <div class="icons">
+                <a href="#">company information</a>
+                <a href="#">careers</a>
+                <a href="#">store loaction</a>
+                <a href="#">affillate program</a>
+                <a href="#">copyright</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>download app</h2>
+            <div class="image">
+                <img src="images/apple.webp" alt="">
+                <img src="images/google-play.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="credit" >copyright 2023<span>pavan kumar</span>all reserved</div>
+<!-- footer section ends -->
+
+
+
+
+<!-- custom js filelink -->
+<script src="script.js">
+    
+</script>
+
+</body>
+</html>
